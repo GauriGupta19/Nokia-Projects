@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE raml SYSTEM 'raml21.dtd'>
+<raml version="2.1" xmlns="raml21.xsd">
+  <cmData type="actual" scope="all">
+    <header>
+      <log dateTime="2019-01-23T09:42:30" action="SCF UPLOAD"/>
+    </header>
+    <managedObject class="RMOD" version="GF18" distName="PLMN-PLMN/BSC-398435/BCF-984/MRBTS-1/RMOD-1" operation="auto">
+      <p name="moduleLocation">FSMF</p>
+      <p name="hwType">FBRM</p>
+      <p name="serNum">EA163811218</p>
+      <p name="prodCode">473439A</p>
+      <p name="mcpaPower">80</p>
+      <list name="connectionList">
+        <item>
+          <p name="sModId">1</p>
+          <p name="linkId">1</p>
+          <p name="positionInChain">1</p>
+        </item>
+      </list>
+    </managedObject>
+    <managedObject class="LCELC" version="GF18" distName="PLMN-PLMN/BSC-398435/BCF-984/MRBTS-1/BTSSCC-1/LCELC-1" operation="auto">
+      <p name="anchorNodeId">0</p>
+      <p name="txPowerPooling">Disabled</p>
+      <p name="perTrxPower">42.0</p>
+      <list name="resourceList">
+        <p>1</p>
+      </list>
+    </managedObject>
+    <managedObject class="LCELC" version="GF18" distName="PLMN-PLMN/BSC-398435/BCF-984/MRBTS-1/BTSSCC-1/LCELC-2" operation="auto">
+      <p name="anchorNodeId">0</p>
+      <p name="txPowerPooling">Enabled</p>
+      <p name="perTrxPower">43.0</p>
+      <list name="resourceList">
+        <p>2</p>
+      </list>
+    </managedObject>
+    <managedObject class="LCELC" version="GF18" distName="PLMN-PLMN/BSC-398435/BCF-984/MRBTS-1/BTSSCC-1/LCELC-3" operation="auto">
+      <p name="anchorNodeId">0</p>
+      <p name="txPowerPooling">Disabled</p>
+      <p name="perTrxPower">42.0</p>
+      <list name="resourceList">
+        <p>3</p>
+      </list>
+    </managedObject>
+    <managedObject class="SCTP" version="GF18" distName="PLMN-PLMN/BSC-398435/BCF-984/MRBTS-1/BTSSCC-1/BTSSCG-1/SCTP-1" operation="auto">
+      <p name="minRTO">150</p>
+      <p name="maxRTO">400</p>
+      <p name="initRTO">200</p>
+      <p name="periodSACK">120</p>
+      <p name="hbInterval">1000</p>
+      <p name="maxRetransPath">4</p>
+      <p name="maxRetransAssoc">5</p>
+      <p name="minSctpPort">49152</p>
+      <p name="ackTimerIUA">4</p>
+      <p name="bundlingEnabled">true</p>
+    </managedObject>
+  </cmData>
+</raml>
